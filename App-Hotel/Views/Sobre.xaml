@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Hotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="{StaticResource Gray100}"
+             BackgroundImageSource="hotelbk.jpg"
+             NavigationPage.HasNavigationBar="False" >
+
+
+
+
+        <!-- Botão que ocupa a largura total da tela -->
+
+
+
+
+     
+
+            <VerticalStackLayout Spacing="10" 
+                             Padding="10"
+                                 >
+
+
+                <Button 
+                        Text="Sobre o Aplicativo"
+                        FontFamily="Spicy"
+                        Padding="9"
+                    BackgroundColor="SaddleBrown"
+                    VerticalOptions="Center"
+                    HorizontalOptions="FillAndExpand" 
+                        FontSize="32"/>
+
+       
+
+        <Grid RowDefinitions="Auto, Auto" 
+                  ColumnDefinitions="*"
+                  RowSpacing="-10" VerticalOptions="Center" 
+                  HorizontalOptions="Center">
+
+            <Frame BorderColor="Brown"  
+                   WidthRequest="340"
+                   BackgroundColor="#99FFFFFF">
+                 
+                 
+                <VerticalStackLayout Padding="10">  <!-- tamanho do container em altura-->
+
+                    <Image Source="hotel_redondo.png" 
+                            HeightRequest="185" 
+                            Scale="1" 
+                           
+                            Aspect="AspectFit"
+                            Shadow="{Shadow Brush=Black}"
+                           
+                          />
+                    <Label Text="" />
+                    <Label Text="Desenvolvido por:"
+                            
+                               FontAttributes="Bold" 
+                               HorizontalOptions="Center"
+                           FontSize="18"
+                            
+                                   TextColor="Brown"/>
+
+                   
+                    <Label Text="João Vitor Costa"
+                               HorizontalOptions="Center"
+                           FontSize="15"
+                                   />
+
+
+                    <Label Text="" />
+                    <Label FontFamily="Times"
+                               Text="© 2024 Jvzin"  
+                               HorizontalOptions="Center"
+                               FontSize="16" />
+
+
+
+                            <Label FontFamily="Times" 
+                               Text="Todos os direitos reservados"  
+                               HorizontalOptions="Center" 
+                               FontSize="14" />
+
+
+                            <Label FontFamily="Times"
+                                   Text="Versão: 1.0" 
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Center"
+                                   FontSize="12.5" 
+                                   TextColor="Black" 
+                                   TranslationY="25" />
+
+                        </VerticalStackLayout>
+                    </Frame>
+
+                </Grid>
+                <Button 
+                       
+                        Text="ㅤVoltarㅤ"
+                    FontAttributes="Bold"
+                        FontFamily="picy"
+                         FontSize="20"
+                        Padding="15"
+                        BackgroundColor="Wheat"
+                        TextColor="Black"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" 
+                        TranslationY="70"
+                    
+                                  />
+            </VerticalStackLayout>
+        
+
+</ContentPage>
+
+
+
+
+
+
+
+
+    
+    
+    

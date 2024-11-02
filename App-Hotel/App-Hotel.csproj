@@ -57,7 +57,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\DeliusSwashCaps.ttf" />
 	  <None Remove="Resources\Fonts\mojangles.ttf" />
+	  <None Remove="Resources\Fonts\SpicyRice.ttf" />
+	  <None Remove="Resources\Fonts\times.ttf" />
+	  <None Remove="Resources\Images\arrow.svg" />
+	  <None Remove="Resources\Images\arrow_back.png" />
+	  <None Remove="Resources\Images\arrow_back_black.png" />
+	  <None Remove="Resources\Images\arrow_back_purple.png" />
+	  <None Remove="Resources\Images\back.jpg" />
+	  <None Remove="Resources\Images\hotel.png" />
+	  <None Remove="Resources\Images\Hotelbk.jpg" />
+	  <None Remove="Resources\Images\hotels.png" />
+	  <None Remove="Resources\Images\hotel_redondo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -71,6 +83,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Sobre.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
