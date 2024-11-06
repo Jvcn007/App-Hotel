@@ -11,7 +11,7 @@
                          Padding="10">
         <Label 
             Text="Cálculo da Diária" TextColor="{StaticResource Primary}"
-           FontFamily="Mojangles" FontSize="40"/>
+           FontFamily="Spicy" FontSize="45"  HorizontalOptions="Center"/>
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -45,22 +45,27 @@
                 </Grid>
 
                 <Label Text="Escolha a sua Suíte:"></Label>
-                <Picker x:Name="pck_quarto" Title="Selecione sua Acomodação" />
+                <Picker x:Name="pck_quarto" 
+                        Title="Selecione sua Acomodação"
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
 
                 <Frame Padding="10" Margin="10">
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia" />
-                        
+
                         <HorizontalStackLayout>
                             <Label Text="Check-in:" />
-                            <DatePicker x:Name="dtpck_checkin" Format="dd/MM/yyyy">
+                            <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
+                                        Format="dd/MM/yyyy">
                             </DatePicker>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
                             <Label Text="Check-out:" />
-                            <DatePicker x:Name="dtpck_checkout" Format="dd/MM/yyyy">
+                            <DatePicker x:Name="dtpck_checkout" 
+                                        Format="dd/MM/yyyy">
                             </DatePicker>
                         </HorizontalStackLayout>
 
@@ -68,7 +73,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" />
+                <Button Text="Avançar" Clicked="Button_Clicked"/>
 
 
             </VerticalStackLayout>
