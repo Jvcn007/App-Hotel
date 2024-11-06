@@ -11,7 +11,7 @@
                          Padding="10">
         <Label 
             Text="Cálculo da Diária" TextColor="{StaticResource Primary}"
-           FontFamily="Mojangles" FontSize="40"/>
+           FontFamily="Mojangles" FontSize="40"/> 
 
         <Frame Padding="10">
             <VerticalStackLayout>
