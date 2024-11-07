@@ -14,9 +14,11 @@
         <Button Text="Sobre o Aplicativo"
                  FontFamily="Spicy"
                  Padding="7"
+                TextColor="Wheat"
                  BackgroundColor="SaddleBrown"
                  HorizontalOptions="FillAndExpand" 
-                 FontSize="32"/>
+                 FontSize="32"
+                 />
 
         <Frame BorderColor="Brown"  
                WidthRequest="300"
@@ -44,6 +46,7 @@
 
                 <Label Text="João Vitor Costa"
                        HorizontalOptions="Center"
+                       TextColor="Black"
                        FontSize="15" />
 
 
@@ -53,6 +56,7 @@
                 <Label FontFamily="Times"
                        Text="© 2024 Jvzin"  
                        HorizontalOptions="Center"
+                       TextColor="Black"
                        FontSize="16" />
 
 
@@ -60,6 +64,7 @@
                 <Label FontFamily="Times" 
                        Text="Todos os direitos reservados"  
                        HorizontalOptions="Center" 
+                       TextColor="Black"
                        FontSize="14" />
 
 
@@ -74,16 +79,19 @@
             </VerticalStackLayout>
         </Frame>
 
-
-        <Button Text="ㅤVoltarㅤ"
+        <Frame BackgroundColor="#00ffffff" BorderColor="#00ffffff">
+            <Button Text="ㅤVoltarㅤ"
                 FontAttributes="Bold"                       
                 FontSize="20"
                 Padding="15"
                 BackgroundColor="Wheat"
                 TextColor="Black"
                 HorizontalOptions="Center" 
-                TranslationY="20" />
-
+                CharacterSpacing="1"
+                BorderColor="Orange"
+                BorderWidth="3"
+                    Clicked="Button_Clicked"/>
+        </Frame>
 
     </VerticalStackLayout>
 </ContentPage>

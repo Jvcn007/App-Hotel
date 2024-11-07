@@ -3,34 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_Hotel.Views.HospedagemContratada"
              NavigationPage.HasNavigationBar="False"
+              BackgroundImageSource="hotelbk.jpg"
              BackgroundColor="{StaticResource Gray100}">
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Suite Super Luxo" 
-               TextColor="{StaticResource Primary}" 
-               FontFamily="Spicy"
-               FontSize="50"
-               HorizontalTextAlignment="Center"/>
+     
+        <Button
+Text="Suíte Super Luxo" TextColor="Wheat" BackgroundColor="SaddleBrown"
+FontFamily="Spicy" FontSize="40"  HorizontalOptions="Center" />
 
-        <Frame Margin="10">
+        <Frame Margin="10" BackgroundColor="#8c400d" BorderColor="#8c400d">
             <HorizontalStackLayout>
-                
+
                 <HorizontalStackLayout>
                     <Label Text=" Adultos: "/>
                     <Label Text=" 2 " 
-                           TextColor="{StaticResource Primary}" />
+                           TextColor="Wheat" />
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
                     <Label Text=" Crianças: "/>
                     <Label Text=" 1 " 
-                           TextColor="{StaticResource Primary}" />
+                           TextColor="Wheat" />
                 </HorizontalStackLayout>
                 
             </HorizontalStackLayout>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10" BackgroundColor="#8c400d" BorderColor="#8c400d">
             <Grid ColumnDefinitions="*,*,*"
                   RowDefinitions="Auto, Auto">
 
@@ -41,20 +41,29 @@
 
                 <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024 " />
                 <Label Grid.Row="1" Grid.Column="1" Text="27/05/2024 " />
-                <Label Grid.Row="1" Grid.Column="2" Text="3 " />
+                <Label Grid.Row="1" Grid.Column="2" Text="3 dias" />
             </Grid>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10" BackgroundColor="#8c400d" BorderColor="#8c400d">
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Label Text="Valor Total: "/>
-                <Label Text=" R$ 750,00 " TextColor="{StaticResource Primary}"/>
+                <Label Text=" R$ 750,00 " TextColor="Wheat"/>
             </HorizontalStackLayout>
         </Frame>
 
-        <Button Text="Voltar"
-                HorizontalOptions="Center"
-                Clicked="Button_Clicked" />
+        <Button Text="ㅤVoltarㅤ"
+ FontAttributes="Bold"                       
+ FontSize="16"
+ Padding="15"
+ BackgroundColor="Wheat"
+ TextColor="Black"
+ HorizontalOptions="Center" 
+ BorderColor="Orange"
+ BorderWidth="3"
+                
+ Clicked="Button_Clicked"/>
+
     </VerticalStackLayout>
     
 </ContentPage>

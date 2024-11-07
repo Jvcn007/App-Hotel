@@ -4,16 +4,29 @@
              x:Class="App_Hotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-                BackgroundColor="{StaticResource Gray100}" >
+              BackgroundImageSource="hotelbk.jpg"
+             
+    BackgroundColor="{StaticResource Gray100}" >
 
 
-    <VerticalStackLayout VerticalOptions="CenterAndExpand"
-                         Padding="10">
-        <Label 
-            Text="Cálculo da Diária" TextColor="{StaticResource Primary}"
-           FontFamily="Spicy" FontSize="45"  HorizontalOptions="Center"/>
 
-        <Frame Padding="10">
+
+
+
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10" Spacing="-16">
+
+        <Frame BackgroundColor="#00ffffff" BorderColor="#00ffffff">
+            <Button
+        Text="Cálculo da Diária" TextColor="Wheat" BackgroundColor="SaddleBrown"
+        FontFamily="Spicy" FontSize="40"  HorizontalOptions="Center"/>
+        </Frame>
+
+
+        
+        
+        
+        <Frame Padding="10" BackgroundColor="#6e340d" BorderColor="#6e340d">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 3*"
@@ -22,7 +35,7 @@
 
                     <Label Grid.Row="0" Grid.Column="0" Text=" Adultos:"  />
 
-                    <Label Grid.Row="0" Grid.Column="1" TextColor="{StaticResource Primary}" 
+                    <Label Grid.Row="0" Grid.Column="1" TextColor="Wheat" 
                        Text="{Binding Value}" BindingContext="{x:Reference stp_adultos}" />
 
                     <Stepper Grid.Row="0" Grid.Column="2" x:Name="stp_adultos"   
@@ -34,10 +47,10 @@
 
                     <Label Grid.Row="1" Grid.Column="0" Text="Crianças:" />
 
-                    <Label Grid.Row="1" Grid.Column="1" TextColor="{StaticResource Primary}" 
+                    <Label Grid.Row="1" Grid.Column="1" TextColor="Wheat" 
                        Text="{Binding Value}" BindingContext="{x:Reference stp_criancas}" />
 
-                    <Stepper Grid.Row="1" Grid.Column="2" x:Name="stp_criancas"   
+                    <Stepper Grid.Row="1" Grid.Column="2" x:Name="stp_criancas"  
                          Minimum="0"
                          Maximum="10"
                          Increment="1" />
@@ -46,11 +59,12 @@
 
                 <Label Text="Escolha a sua Suíte:"></Label>
                 <Picker x:Name="pck_quarto" 
+                        
                         Title="Selecione sua Acomodação"
                         ItemDisplayBinding="{Binding Descricao}"/>
 
 
-                <Frame Padding="10" Margin="10">
+                <Frame Padding="10" Margin="10" BackgroundColor="#8c400d" BorderColor="#8c400d">
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia" />
 
@@ -73,11 +87,39 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked"/>
+
+
+                <Button Text="ㅤCalcularㅤ"
+                        FontAttributes="Bold"                       
+                        FontSize="16"
+                        CharacterSpacing="1"
+                        BackgroundColor="Wheat"
+                        TextColor="Black" 
+                        BorderColor="Orange"
+                        BorderWidth="2"
+                        Clicked="Button_Clicked"/>
 
 
             </VerticalStackLayout>
+           
+              
+            
+
         </Frame>
+        <Frame BackgroundColor="#00ffffff" BorderColor="#00ffffff">
+            <Button Text="ㅤVoltarㅤ"
+                    FontAttributes="Bold"                       
+                    FontSize="14"
+                    Padding="12"
+                    BackgroundColor="Wheat"
+                    TextColor="Black"
+                    HorizontalOptions="Center" 
+                    BorderColor="Orange"
+                    BorderWidth="2.5"
+                    Clicked="Button_Clicked_1"/>
+        </Frame>
+
     </VerticalStackLayout>
+
 
 </ContentPage>
