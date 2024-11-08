@@ -39,9 +39,9 @@ FontFamily="Spicy" FontSize="40"  HorizontalOptions="Center" />
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out: " />
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia: " />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024 " />
-                <Label Grid.Row="1" Grid.Column="1" Text="27/05/2024 " />
-                <Label Grid.Row="1" Grid.Column="2" Text="3 dias" />
+                <Label Grid.Row="1" Grid.Column="0" Text="13/11/2024 " />
+                <Label Grid.Row="1" Grid.Column="1" Text="10/12/2024 " />
+                <Label Grid.Row="1" Grid.Column="2" Text="27 dias" />
             </Grid>
         </Frame>
 

@@ -21,9 +21,9 @@
         </Frame>
 
 
-        <Frame BackgroundColor="#60f5deb3" BorderColor="#908b4513" >
+        <Frame BackgroundColor="#60f5deb3" BorderColor="#908b4513" WidthRequest="295" >
                 
-            <VerticalStackLayout Spacing="12">
+            <VerticalStackLayout Spacing="14" Padding="4">
                 <Button Text="ㅤIniciarㅤ"
                 FontAttributes="Bold"                       
                 FontSize="20"

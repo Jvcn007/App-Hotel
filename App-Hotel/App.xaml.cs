@@ -45,9 +45,10 @@ namespace App_Hotel
         {
             InitializeComponent();
 
-          //  MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
-          //  MainPage = new NavigationPage(new Views.Sobre());
-            MainPage = new NavigationPage(new Views.StartPage());
+                MainPage = new NavigationPage(new Views.StartPage());
+            //  MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
+            //  MainPage = new NavigationPage(new Views.Sobre());
+
 
         }
 
