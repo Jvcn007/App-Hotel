@@ -7,14 +7,12 @@
              BackgroundImageSource="hotelbk.jpg"
              NavigationPage.HasNavigationBar="False">
 
-
     <VerticalStackLayout Spacing="5" Padding="10">
-
 
         <Button Text="Sobre o Aplicativo"
                  FontFamily="Spicy"
                  Padding="7"
-                TextColor="Wheat"
+                 TextColor="Wheat"
                  BackgroundColor="SaddleBrown"
                  HorizontalOptions="FillAndExpand" 
                  FontSize="32"
@@ -26,16 +24,13 @@
 
 
             <VerticalStackLayout Padding="10">
-                <!-- tamanho do container em altura-->
 
                 <Image Source="hotel_redondo.png" 
                        HeightRequest="185" 
                        Scale="1.0314"         
                        Shadow="{Shadow Brush=Black}" />
 
-
                 <Label Text="" />
-
 
                 <Label Text="Desenvolvido por:"
                        FontAttributes="Bold" 
@@ -43,15 +38,12 @@
                        FontSize="18"
                        TextColor="Brown"/>
 
-
                 <Label Text="João Vitor Costa"
                        HorizontalOptions="Center"
                        TextColor="Black"
                        FontSize="15" />
 
-
                 <Label Text="" />
-
 
                 <Label FontFamily="Times"
                        Text="© 2024 Jvzin"  
@@ -59,15 +51,12 @@
                        TextColor="Black"
                        FontSize="16" />
 
-
-
                 <Label FontFamily="Times" 
                        Text="Todos os direitos reservados"  
                        HorizontalOptions="Center" 
                        TextColor="Black"
                        FontSize="14" />
-
-
+                
                 <Label FontFamily="Times"
                        Text="Versão: 1.0" 
                        VerticalOptions="Center" 
@@ -90,7 +79,7 @@
                 CharacterSpacing="1"
                 BorderColor="Orange"
                 BorderWidth="3"
-                    Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked"/>
         </Frame>
 
     </VerticalStackLayout>

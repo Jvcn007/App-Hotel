@@ -5,24 +5,21 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundImageSource="hotelbk.jpg"  >
 
-
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="5">
 
         <Frame BackgroundColor="SaddleBrown" BorderColor="#00ffffff">
             <Label
             Text="Seja Bem-Vindo(a) ao App Meu Hotel"
-            
             FontSize="20"
-            
-            TextColor="Wheat" BackgroundColor="SaddleBrown"
             FontFamily="Spicy"
+            TextColor="Wheat" 
+            BackgroundColor="SaddleBrown"    
            />
 
         </Frame>
 
-
         <Frame BackgroundColor="#60f5deb3" BorderColor="#908b4513" WidthRequest="295" >
-                
+
             <VerticalStackLayout Spacing="14" Padding="4">
                 <Button Text="ㅤIniciarㅤ"
                 FontAttributes="Bold"                       
@@ -47,12 +44,7 @@
                 BorderWidth="3"
                 Clicked="Button_Clicked_1"/>
 
-
             </VerticalStackLayout>
-
-
-
         </Frame>
-
     </VerticalStackLayout>
 </ContentPage>

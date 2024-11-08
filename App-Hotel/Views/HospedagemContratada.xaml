@@ -7,10 +7,12 @@
              BackgroundColor="{StaticResource Gray100}">
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-     
-        <Button
-Text="Suíte Super Luxo" TextColor="Wheat" BackgroundColor="SaddleBrown"
-FontFamily="Spicy" FontSize="40"  HorizontalOptions="Center" />
+        <Button Text="Suíte Super Luxo" 
+                TextColor="Wheat" 
+                BackgroundColor="SaddleBrown"
+                FontFamily="Spicy"
+                FontSize="40" 
+                HorizontalOptions="Center" />
 
         <Frame Margin="10" BackgroundColor="#8c400d" BorderColor="#8c400d">
             <HorizontalStackLayout>
@@ -34,7 +36,6 @@ FontFamily="Spicy" FontSize="40"  HorizontalOptions="Center" />
             <Grid ColumnDefinitions="*,*,*"
                   RowDefinitions="Auto, Auto">
 
-
                 <Label Grid.Row="0" Grid.Column="0" Text="Check-in: " />
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out: " />
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia: " />
@@ -53,16 +54,15 @@ FontFamily="Spicy" FontSize="40"  HorizontalOptions="Center" />
         </Frame>
 
         <Button Text="ㅤVoltarㅤ"
- FontAttributes="Bold"                       
- FontSize="16"
- Padding="15"
- BackgroundColor="Wheat"
- TextColor="Black"
- HorizontalOptions="Center" 
- BorderColor="Orange"
- BorderWidth="3"
-                
- Clicked="Button_Clicked"/>
+                FontAttributes="Bold"                       
+                FontSize="16"
+                Padding="15"
+                BackgroundColor="Wheat"
+                TextColor="Black"
+                HorizontalOptions="Center" 
+                BorderColor="Orange"
+                BorderWidth="3"
+                Clicked="Button_Clicked"/>
 
     </VerticalStackLayout>
     

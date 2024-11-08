@@ -8,24 +8,18 @@
              
     BackgroundColor="{StaticResource Gray100}" >
 
-
-
-
-
-
-
     <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10" Spacing="-16">
 
-        <Frame BackgroundColor="#00ffffff" BorderColor="#00ffffff">
-            <Button
-        Text="Cálculo da Diária" TextColor="Wheat" BackgroundColor="SaddleBrown"
-        FontFamily="Spicy" FontSize="40"  HorizontalOptions="Center"/>
+        <Frame BackgroundColor="#00ffffff" 
+               BorderColor="#00ffffff">
+
+            <Button Text="Cálculo da Diária"    
+                    TextColor="Wheat"
+                    BackgroundColor="SaddleBrown"
+                    FontFamily="Spicy" FontSize="40" 
+                    HorizontalOptions="Center"/>
         </Frame>
 
-
-        
-        
-        
         <Frame Padding="10" BackgroundColor="#6e340d" BorderColor="#6e340d">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
@@ -63,7 +57,6 @@
                         Title="Selecione sua Acomodação"
                         ItemDisplayBinding="{Binding Descricao}"/>
 
-
                 <Frame Padding="10" Margin="10" BackgroundColor="#8c400d" BorderColor="#8c400d">
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia" />
@@ -82,12 +75,8 @@
                                         Format="dd/MM/yyyy">
                             </DatePicker>
                         </HorizontalStackLayout>
-
-
                     </VerticalStackLayout>
                 </Frame>
-
-
 
                 <Button Text="ㅤCalcularㅤ"
                         FontAttributes="Bold"                       
@@ -99,11 +88,7 @@
                         BorderWidth="2"
                         Clicked="Button_Clicked"/>
 
-
             </VerticalStackLayout>
-           
-              
-            
 
         </Frame>
         <Frame BackgroundColor="#00ffffff" BorderColor="#00ffffff">
@@ -117,9 +102,7 @@
                     BorderColor="Orange"
                     BorderWidth="2.5"
                     Clicked="Button_Clicked_1"/>
+   
         </Frame>
-
     </VerticalStackLayout>
-
-
 </ContentPage>
